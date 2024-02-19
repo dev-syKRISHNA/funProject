@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date?</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Sanju Would you like to go out on a Date?</h1>
+    <video autoplay loop muted>
+        <source src="./Assests/Bear Invitation.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="buttonBox">
+        <button onclick="acceptDate()">Yes, Obviously</button>
+        <button onclick="rejectDate()">No</button>
+    </div>
+    <script>
+        function acceptDate(){
+            window.location.href = "./YesPages/yes1.html"
+        }
+
+        function rejectDate(){
+            window.location.href = "./NoPages/no1.html"
+        }
+    </script>
+</body>
+</html>

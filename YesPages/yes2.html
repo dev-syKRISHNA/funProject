@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Date</title>
+    <link rel="stylesheet" href="yesPage.css">
+</head>
+    
+    <div class="happyContainer2">
+    
+        <div class="textBox">
+            <h2>Okay this was not as easy as I thought it would be</h2> 
+            <h3>Alright Sanju let's have some French Toast this time</h3>
+        </div>
+        
+        <div class="yes">
+            <button class="yesButton2" onclick="playVideo()">Oui bébé</button>
+        </div> 
+        
+        <video class="videoBox" id="successVideo" style="display:none;" autoplay >
+            <source src="../Assests/dateAccepted.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="videoEndText" style="display: none; ">
+            <h1>Call Me Sanju</h1>
+        </div>
+    </div>
+
+    <script>
+        function playVideo() {
+            var video = document.getElementById('successVideo');
+            video.style.display = 'block';
+            video.play();
+            var textBox = document.querySelector('.textBox',);
+            textBox.style.display = 'none'; 
+            var yes = document.querySelector('.yes');
+            yes.style.display = 'none';
+            var videoEndText = document.querySelector('.videoEndText');
+            videoEndText.style.display = 'block';
+            
+            
+        }
+    </script>
+
+</body>
+</html>
